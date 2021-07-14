@@ -42,7 +42,7 @@ function reset() {
     paper.className = "options";
     scissors.className = "options";
     winOrLose.innerHTML = "LET'S GO";
-    
+    winOrLose.style.color = "white";
 } 
 
 function checkIfSelected() {
