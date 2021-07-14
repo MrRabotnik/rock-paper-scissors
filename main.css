@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    background-color: #e8e8e8;
+    height: 100vh;
+    user-select: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+img{
+    -webkit-user-drag: none;
+}
+
+section{
+    height: 100%;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.container > div:hover{
+    transform: translateY(-1rem) scale(1.1);
+}
+
+.selected{
+    box-shadow: inset 0 0 2rem black;
+}
+
+.start_reset{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    border-radius: 4rem;
+    border: 1px solid black;
+    box-shadow: 0 0 1rem rgb(209, 205, 205);
+    outline: none;
+}
+
+.start_reset:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+    box-shadow: 0 0 1rem rgb(65, 62, 62);
+}
+
+#score{
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    font-size: 3rem;
+}
+
+.action_container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.95);
+    text-align: center;
+    display: none;
+    transition: .5s;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#win_or_lose{
+    color: white;
+    text-shadow: 2px 2px 5px white;
+    font-size: 5rem;
+}
+
+.pos-rel{
+    position: relative;
+    height: 250px;
+}
+
+.pos-rel img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: .25s;
+}
+
+@media only screen and (max-width: 1024px) {
+    .options img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .options{
+        margin: 1rem 0;
+    }
+
+    .options img{
+        width: 50%;
+    }
+
+    #score{
+        font-size: 1.5rem;
+    }
+}

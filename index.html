@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="shortcut icon" href="./Images/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <section>
+        <h1>Select a figure and click the button below</h1>
+        <button class="start_reset" id="start">ROCK PAPER SCISSORS!!!</button>
+
+        <div class="container">
+            <div id="rock" class="options">
+                <img src="./Images/rock.png" alt="">
+            </div>
+            <div id="paper" class="options">
+                <img src="./Images/paper.png" alt="">
+            </div>
+            <div id="scissors" class="options">
+                <img src="./Images/scissors.png" alt="">
+            </div>
+        </div>
+
+        <div id="score">You: 0 - AI: 0</div>
+    </section>
+
+    <div class="action_container" id="result">
+        <div class="pos-rel">
+            <img id="AI_choice" src="" alt="">
+        </div>
+        <div id="win_or_lose">LET'S GO</div>
+        <div class="pos-rel">
+            <img id="my_choice" src="" alt="">
+        </div>
+        <button class="start_reset" id="reset">Reset</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
