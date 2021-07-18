@@ -53,7 +53,6 @@ h1{
 .start_reset:hover{
     background-color: black;
     color: white;
-    transition: .5s;
     box-shadow: 0 0 1rem rgb(65, 62, 62);
 }
 

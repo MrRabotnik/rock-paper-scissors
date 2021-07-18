@@ -23,7 +23,6 @@ let AIScore = 0;
 function start() {
     if (!checkIfSelected()) return;
     startBtn.style.visibility = "hidden";
-    startBtn.style.opacity = 0;
     result.style.display = "flex";
     setTimeout(() => {
         result.style.opacity = 1;
