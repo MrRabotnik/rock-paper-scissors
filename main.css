@@ -1,17 +1,18 @@
-body{
+body {
     margin: 0;
     background-color: #e8e8e8;
     height: 100vh;
     user-select: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
     overflow: hidden;
 }
 
-img{
+img {
     -webkit-user-drag: none;
 }
 
-section{
+section {
     height: 100%;
     width: 80%;
     max-width: 1000px;
@@ -21,26 +22,26 @@ section{
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 10%;
 }
 
-.container > div:hover{
+.container > div:hover {
     transform: translateY(-1rem) scale(1.1);
 }
 
-.selected{
+.selected {
     box-shadow: inset 0 0 2rem black;
 }
 
-.start_reset{
+.start_reset {
     font-size: 1.5rem;
     padding: 1rem 2rem;
     margin: 1rem auto;
@@ -50,86 +51,86 @@ h1{
     outline: none;
 }
 
-.start_reset:hover{
+.start_reset:hover {
     background-color: black;
     color: white;
     box-shadow: 0 0 1rem rgb(65, 62, 62);
 }
 
-#score{
+#score {
     position: absolute;
     bottom: 1rem;
     right: 2rem;
     font-size: 3rem;
 }
 
-.action_container{
+.action_container {
     width: 100%;
     height: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    background: rgba(0,0,0,0.95);
+    background: rgba(0, 0, 0, 0.95);
     text-align: center;
     display: none;
-    transition: .5s;
+    transition: 0.5s;
     opacity: 0;
     flex-direction: column;
     justify-content: space-around;
 }
 
-#win_or_lose{
+#win_or_lose {
     color: white;
     text-shadow: 2px 2px 5px white;
     font-size: 5rem;
 }
 
-.pos-rel{
+.pos-rel {
     position: relative;
     height: 250px;
 }
 
-.pos-rel img{
+.pos-rel img {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    transition: .25s;
+    transition: 0.25s;
 }
 
 @media only screen and (max-width: 1024px) {
-    .options img{
+    .options img {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .container{
+    .container {
         flex-direction: column;
         margin: auto;
         margin-top: 1rem;
-        width: 25%;
+        width: 50%;
     }
 
-    #start{
+    #start {
         font-size: 1rem;
         margin: 0;
     }
 
-    .options{
+    .options {
         margin: 1rem 0;
     }
 
-    .options img{
+    .options img {
         width: 50%;
     }
 
-    #score{
+    #score {
         font-size: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 420px) {
-    .container{
+    .container {
         flex-direction: column;
         margin: auto;
         margin-top: 1rem;
